@@ -1,0 +1,21 @@
+package com.zytoame.patchtreatmentrearend.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
+/**
+ * 密码加密配置
+ */
+@Configuration
+public class PasswordEncoderConfig {
+    /**
+     * 使用BCrypt算法加密密码
+     * BCrypt是单向哈希，不可逆，安全性高
+     */
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+}

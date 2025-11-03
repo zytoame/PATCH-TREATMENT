@@ -4,7 +4,7 @@ package com.zytoame.patchtreatmentrearend.common;
  * 响应码枚举
  */
 public enum ResultCode {
-    SUCCESS(200, "操作失败"),
+    SUCCESS(200, "操作成功"),
     FAIL(400, "操作失败"),
     UNAUTHORIZED(401,"未授权"),
     FORBIDDEN(403,"禁止访问"),

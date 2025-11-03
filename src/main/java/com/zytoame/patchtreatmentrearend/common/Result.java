@@ -6,6 +6,7 @@ import java.io.Serializable;
 /**
  * 统一响应结果类
  */
+@Data
 public class Result<T> implements Serializable {
     private int code;
     private String msg;
