@@ -19,6 +19,10 @@ public class LoginResponse {
     private Long expires_in;              //过期时间（秒）
     private UserInfo userInfo; //用户信息
 
+    @Data
+    @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class UserInfo {
         private Long id;
         private String username;
